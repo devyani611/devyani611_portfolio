@@ -75,7 +75,7 @@
         align-items:center;
         justify-content:center;
         position: absolute;
-        top: 52%;
+        top: 70%;
         left: 11.2%;
         right: 12%;
         font-size: 15px;
@@ -90,7 +90,7 @@
         align-items:center;
         justify-content:center;
         position: absolute;
-        top: 83%;
+        top: 113.5%;
         left: 11.2%;
         right: 12%;
         font-size: 15px;
@@ -105,7 +105,7 @@
         align-items:center;
         justify-content:center;
         position: absolute;
-        top: 120%;
+        top: 151.4%;
         left: 11.2%;
         right: 12%;
         font-size: 15px;
@@ -133,25 +133,37 @@
         <div id="div2">
             <h1 id="h1">My work</h1>
             <div id="project1">
-                <img src= "2048.jpg" height ="150" width= "150" alt="2048 game" style= "float:left">
+                <img src= "2048.jpg" height ="250" width= "150" alt="2048 game" style= "float:left">
                 <!--div-nested-->
                 <div style= "margin-left: 18%;"> 
                 <h2>2048 game using AI</h1>
-                <p>Implemented 2048 game using reinforcement learning as my class project for Artificial Intelligence class.
+                <p>The 2048 game is a single-player game.In the project, we implemented the Minimax Algorithm, 
+                    the Expectimax Algorithm and Reinforcement Learning to create agents that can master the game.
+                    Following were the parameters used in the project:<br>
+                    Performance Measure:Tile with the maximum value on the board<br>
+                    Environment: 2048 game board of 16 squares in a 4x4 configuration.<br>
+                    Actuators: Virtual keyboard events ‘Up’, ‘Down’, ‘Left’, ‘Right’.<br>
+                    Sensors: Interaction with game logic.<br>
+                    Essentially, the projects involves the implemenation and comparative analysis of the three algorithms.<br>
                     Implementation language: Python <br>
                     Libraries: tkinter, keras, numpy, random
                 </p>
             </div>
             </div>
             <div id="project2">
-                    <img src= "wine.jpg" height ="160" width= "150" alt="2048 game" style= "float:left">
+                    <img src= "wine.jpg" height ="233" width= "150" alt="2048 game" style= "float:left">
                     <!--div-nested-->
                     <div style= "margin-left: 18%;"> 
                     <h2>Wine quality prediction</h1>
-                    <p>Implemented random forest and decision tree algorithms in machine learning to predict the quality of wine.<br>
+                    <p>Implemented random forest and decision tree algorithms in machine learning to predict the quality of wine. The goal 
+                            of the project was to determine white wine quality based on its chemical properties. The dataset was downloaded from UCI and it
+                            contains 11 attributes and the 12th column is quality which is regarded as the label 
+                            or target data. Quality is graded from 0 to 10, where 0 is the worst and 10 is the best quality. Based 
+                            on the quality scores we classify wines as Good, Bad and Normal ones. Essentially, the accuracy of random forest 
+                            algorithm and decision tree algorithm had been compared.<br>
                         Dataset: <a href= "https://archive.ics.uci.edu/ml/datasets/wine+quality">https://archive.ics.uci.edu/ml/datasets/wine+quality</a>
                         <br>Implementation language: Python <br>
-                        Libraries: tkinter, keras, numpy, random
+                        Libraries: sklearn, numpy, seaborn, matplotlib, graphviz, pandas.
                     </p>
                 </div>
                 </div>
@@ -173,7 +185,7 @@
                     </div>
                     </div>
     <div id="project4">
-        <img src= "sorting.jpg" height ="200" width= "150" alt="2048 game" style= "float:left">
+        <img src= "sorting.jpg" height ="210" width= "150" alt="2048 game" style= "float:left">
             <!--div-nested-->
                 <div style= "margin-left: 18%;"> 
                     <h2>Analysis of QuickSort, RadixSort, TimSort</h1>
@@ -182,7 +194,8 @@
                             Few unique random integers list(may contain duplicate integers), Nearly sorted (first half sorted, 
                             second half random), Nearly sorted( second half sorted, first half random),Reverse integers list (sorted in decreasing order).
                          <br>Implementation Language: Python<br>
-                         Input sizes: 1000,10000,100000,1000000.
+                         Input sizes: 1000,10000,100000,1000000.<br>
+                         Libraries: random
                         </p>
                 </div>
     </div>
