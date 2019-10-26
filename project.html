@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>    
+            nav ul {
+                list-style-type: none;
+                margin: 5px 50px 30px 40px;
+                color:#484848;
+              }
+              nav ul li {
+                float: right; 
+              }
+              nav ul li a {
+                padding: 0.25em 1em;
+                text-decoration: none; 
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                color:#484848; 
+              }
+              nav ul li a:hover, nav ul li a:focus {
+                color: black;
+                font-weight: bold;
+              }
+              hr {
+  box-sizing: content-box;
+  height: 2px;
+  overflow: visible;
+  margin-top: 30%
+}
+#container {
+    display: block;
+}
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+    clear: both;
+    overflow: hidden;
+}
+ /*#div2{
+    border: 2px solid black;
+}*/
+#h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color: #484848;     
+    font-style: oblique; 
+    font-size: 40px;
+}
+#project1{
+        display:block;
+        align-items:center;
+        justify-content:center;
+        position: absolute;
+        top: 23.6%;
+        left: 11.2%;
+        margin-right: 12%;
+        font-size: 15px;
+        letter-spacing: 1px;
+        padding: 0 20px 0 0;
+        border-style: groove;
+        border-width: 7px;
+        border-color: #B8C76D;
+    }
+    #project2{
+        display:block;
+        align-items:center;
+        justify-content:center;
+        position: absolute;
+        top: 52%;
+        left: 11.2%;
+        right: 12%;
+        font-size: 15px;
+        letter-spacing: 1px;
+        padding: 0 20px 0 0;
+        border-style: groove;
+        border-width: 7px;
+        border-color: #B8C76D;
+    }
+    #project3{
+        display:block;
+        align-items:center;
+        justify-content:center;
+        position: absolute;
+        top: 83%;
+        left: 11.2%;
+        right: 12%;
+        font-size: 15px;
+        letter-spacing: 1px;
+        padding: 0 20px 0 0;
+        border-style: groove;
+        border-width: 7px;
+        border-color: #B8C76D;
+    } 
+    #project4{
+        display:block;
+        align-items:center;
+        justify-content:center;
+        position: absolute;
+        top: 120%;
+        left: 11.2%;
+        right: 12%;
+        font-size: 15px;
+        letter-spacing: 1px;
+        padding: 0 20px 0 0;
+        border-style: groove;
+        border-width: 7px;
+        border-color: #B8C76D;
+    } 
+  
+</style>              
+</head>
+<body background="bgimage.jpg">
+    <div>
+        <nav>
+        <ul>
+            <li><a href="contact_form.html">Contact</a></li>
+            <li><a href="contact_form.html">Projects</a></li>
+            <li><a href="aboutme.html">About</a></li>
+                <li><a href="portfolio.html">Home</a></li>   
+            </ul> 
+        </nav>
+    </div>
+    <div id= "container" class= "wrapper">
+        <div id="div2">
+            <h1 id="h1">My work</h1>
+            <div id="project1">
+                <img src= "2048.jpg" height ="150" width= "150" alt="2048 game" style= "float:left">
+                <!--div-nested-->
+                <div style= "margin-left: 18%;"> 
+                <h2>2048 game using AI</h1>
+                <p>Implemented 2048 game using reinforcement learning as my class project for Artificial Intelligence class.
+                    Implementation language: Python <br>
+                    Libraries: tkinter, keras, numpy, random
+                </p>
+            </div>
+            </div>
+            <div id="project2">
+                    <img src= "wine.jpg" height ="160" width= "150" alt="2048 game" style= "float:left">
+                    <!--div-nested-->
+                    <div style= "margin-left: 18%;"> 
+                    <h2>Wine quality prediction</h1>
+                    <p>Implemented random forest and decision tree algorithms in machine learning to predict the quality of wine.<br>
+                        Dataset: <a href= "https://archive.ics.uci.edu/ml/datasets/wine+quality">https://archive.ics.uci.edu/ml/datasets/wine+quality</a>
+                        <br>Implementation language: Python <br>
+                        Libraries: tkinter, keras, numpy, random
+                    </p>
+                </div>
+                </div>
+                <div id="project3">
+                        <img src= "ipl.jpg" height ="200" width= "150" alt="2048 game" style= "float:left">
+                        <!--div-nested-->
+                        <div style= "margin-left: 18%;"> 
+                        <h2>Database Implementation of IPL(Indian Premiere League)</h1>
+                        <p>The domain of this database was based on Indian Premier League (IPL). 
+                            IPL, is a professional Twenty20 cricket league in India, which is contested during April and May of every year 
+                            by 8 teams representing Indian cities and some states.Each team plays each other twice in a 
+                            home-and-away round-robin format. It is the most-attended cricket league in the world. The data for a few tables was
+                            downloaded online, while some of the tables was populated by me. <br>
+                            Dataset: <a href= "https://www.kaggle.com/harsha547/indian-premier-league-csv-dataset/version/2">
+                                https://www.kaggle.com/harsha547/indian-premier-league-csv-dataset/version/2</a>
+                            <br>Database: PostgreSQL<br>
+                            
+                        </p>
+                    </div>
+                    </div>
+    <div id="project4">
+        <img src= "sorting.jpg" height ="200" width= "150" alt="2048 game" style= "float:left">
+            <!--div-nested-->
+                <div style= "margin-left: 18%;"> 
+                    <h2>Analysis of QuickSort, RadixSort, TimSort</h1>
+                        <p>Implemented QuickSort with naive pivot selection, random pivot selection and median of medians with group 5 and group 7.
+                            To scrutinize the algorithms thoroughly, different input lists are generated as: Unique random integers list,
+                            Few unique random integers list(may contain duplicate integers), Nearly sorted (first half sorted, 
+                            second half random), Nearly sorted( second half sorted, first half random),Reverse integers list (sorted in decreasing order).
+                         <br>Implementation Language: Python<br>
+                         Input sizes: 1000,10000,100000,1000000.
+                        </p>
+                </div>
+    </div>
+        </div>
+    </div>
+      
+</body>
+</html>
