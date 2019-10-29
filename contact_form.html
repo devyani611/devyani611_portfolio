@@ -2,15 +2,17 @@
 <html>
     <head>
 <title> Contact Form</title>
+<link rel="stylesheet" href="css/bootstrap.css">
 <style>
     nav ul {
         list-style-type: none;
         margin: 5px 50px 30px 40px;
         color:#484848;
+        
       }
       nav ul li {
         float: right; 
-       
+        
       }
       
       nav ul li a {
@@ -23,35 +25,54 @@
       nav ul li a:hover, nav ul li a:focus {
         color: black;
         font-weight: bold;
+        text-decoration: none;
       }
-      .center {
-                background-color: white;
-                margin: auto;
-                width: 20%;
-                border: 1px solid #cecece;
-                padding: 1em; ; 
-                font-family: "Helvetica";
-                color: navy;
-                    }
-
-                    .button {
-                background-color: navy; /* Green */
-                border: none;
-                color: white;
-                padding: 8px 15px;
-                text-align: center;;
-                display: inline-block;
-                font-family: Helvetica;
-                font-size: 0.7em;
-                cursor: pointer;
-                margin-top: 15px;
-                margin-left: 30px; 
-                    }
+      
+    #container {
+            width: 100%;
+            padding: 20px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 6%;
+            max-width: 500px;
+            border: 1px solid #ced4da;
+            background-color:white;
+            }
+            .wrapper {
+            margin: 0 auto;
+            clear: both;
+            overflow: hidden;
+            }
+            .btn-primary1 {
+                color: #fff;
+                background-color: gray;
+                border-color: gray;
+            }
+            .h4 {
+                font-weight: 500;
+                line-height: 1.2;
+                font-size:105%;
+                text-align: center;
+                }
+                #hr2{
+      box-sizing: content-box;
+      height: 2px;
+      overflow: visible;
+      margin-top: 8%
+    }
    
+              #h6{
+                font-size: 80%;
+                margin-left:0.2%; 
+                margin-bottom:-0.5%;
+                margin-top:0.8%;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+              }
+            
 </style>
     </head>
-
-<body background="image2.jpg"> 
+<body background="bgimage.jpg"> 
+              <div>
                 <nav>
                     <ul>
                         <li><a href="contact_form.html">Contact</a></li>
@@ -59,36 +80,44 @@
                         <li><a href="aboutme.html">About</a></li>
                         <li><a href="portfolio.html">Home</a></li> 
                     </ul> 
-                </nav>           
-                <div class= "center">
-    
-                        <h4 align= "center"> Say Hello!</h4>
-                    <form>
-                      <input type="text" name="fname" placeholder="Name" size= "39" style= "padding: 10px; border:1px solid #cecece; font-family: Helvetica; font-size: 11px; color:#cecece"><br>
-                      <br>
-                      <input type="text" name="lname" placeholder="Email" size= "39" style= "padding: 10px; border: 1px solid #cecece; font-family: Helvetica; font-size: 11px; color:#cecece"><br>
-                      <br>
-                      <textarea rows="6" cols="30" name="comment" form="usrform" style= "border: 1px solid #cecece;">
-                            </textarea>      
-                            <br>
-                            
-                            <button type="submit" class= "button">SUBMIT</button> 
-                            <button type="reset" class= "button">RESET</button>
-                            
+                </nav> 
+              </div>        
+              <div id="container" class=" wrapper">
+                  <p class="h4 mb-4 font-weight-bold">Say Hello!!</p>
+                  <hr>
+              <form>
+                      <div class="form-group">
+                        <label for="Inputname">Name</label>
+                        <input type="email" class="form-control">
+                      </div>
+                      <div class="form-group">
+                        <label for="InputEmail">Email</label>
+                        <input type="email" class="form-control">
+                      </div>
+                      <div class="form-group">
+                              <label for="exampleFormControlTextarea1">Message</label>
+                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                      
                     </form>
-                    
-                    </div>
+          </div>        
 <br>                  
 <br>
-<h2 align="center">Connect with Me</h2>
-<p align="center">
-		<a href="https://github.com/devyani611"><img src="github-128.png" width= "3%"></a>
-		<a href="https://www.linkedin.com/in/devyani-shrivastava-1b2b48bb/"><img src="square-linkedin-128.png" width= "3%"></a>
-		<a href="https://stackexchange.com/users/16931703/dshri"><img src="stackoverflow.png" width= "3%"></a>
-	</p>
-<hr>
-	<footer> 
-        <p align= "center">&copy; 2019 Devyani Shrivastava </p></footer>
+<div>
+    <hr id= "hr2">
+<footer> 
+        <h6 id= "h6">Connect with Me</h6>
+        <p style="margin-left:0.5%; margin-top:1%;">
+            <a href="https://github.com/devyani611"><img src="github-128.png" width= "2%"></a>
+            <a href="https://www.linkedin.com/in/devyani-shrivastava-1b2b48bb/"><img src="square-linkedin-128.png" width= "2%"></a>
+            <a href="https://stackexchange.com/users/16931703/dshri"><img src="stackoverflow.png" width= "2%"></a>
+          </p>
+          <div style=" margin-top:-4%">
+          <p align= "center">&copy; 2019 Devyani Shrivastava </p> </div>
+        </footer>
+    </div>
+</div>
 
 </body>
 </html>

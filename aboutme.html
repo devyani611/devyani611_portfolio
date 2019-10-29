@@ -5,10 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Devyani Shrivastava</title>
+    
     <style>    
     nav ul {
         list-style-type: none;
-        margin: 5px 50px 30px 40px;
+        margin: 5px 50px 28px 40px;
         color:#484848;
       }
       nav ul li {
@@ -27,6 +28,7 @@
       nav ul li a:hover, nav ul li a:focus {
         color: black;
         font-weight: bold;
+        text-decoration: none;
       }
       #h1{
         color: #484848;     
@@ -40,24 +42,48 @@
         margin-right: -50%; 
         font-style: oblique;  
       }
-    #para{
+   #para{
       display: flex;
         align-items: center;
         justify-content: center;
         position: absolute;
-        top: 40%;
+        top: 34%;
         left: 5%;
         margin-right: 5%;
         font-style: oblique; 
         font-size: 20px;
         letter-spacing: 1px;
     }
-  
- 
-
+    #container {
+    display: block;
+}
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+    clear: both;
+    overflow: hidden;
+}
+        hr {
+      box-sizing: content-box;
+      height: 2px;
+      overflow: visible;
+      margin-top: 39%
+    }
+   
+              #h6{
+                font-size: 80%;
+                margin-left:0.2%; 
+                margin-bottom:-0.5%;
+                margin-top:0.8%;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-weight:500;
+              }
+           
         </style>
         </head>
 <body background= "image2.jpg">
+  
+  <div>
       <nav>
           <ul>
               <li><a href="contact_form.html">Contact</a></li>
@@ -65,9 +91,9 @@
               <li><a href="aboutme.html">About</a></li>
               <li><a href="portfolio.html">Home</a></li>              
           </ul> 
-      </nav>
-            <div>
-             <section>
+      </nav> 
+  </div>
+  <div id= "container" class= "wrapper">
               <h1 id="h1">About Me</h1>
               <div id="para">
                 <p>My name is Devyani Shrivastava and currently, I am pursuing Master of Science in Computer Science at Portland State University.
@@ -81,12 +107,24 @@
     <br>
     Skills: C/C++, Java, Python, HTML, CSS, SQL
    </p>
-  </div>
    
-  <footer> 
-          <p align= "center">&copy; 2019 Devyani Shrivastava </p></footer> 
-  </section>
   </div>
+  </div>
+  <div>
+      <hr>
+  <footer> 
+          <h6 id= "h6">Connect with Me</h6>
+          <p style="margin-left:0.5%; margin-top:1%;">
+              <a href="https://github.com/devyani611"><img src="github-128.png" width= "2%"></a>
+              <a href="https://www.linkedin.com/in/devyani-shrivastava-1b2b48bb/"><img src="square-linkedin-128.png" width= "2%"></a>
+              <a href="https://stackexchange.com/users/16931703/dshri"><img src="stackoverflow.png" width= "2%"></a>
+            </p>
+            <div style=" margin-top:-4%">
+            <p align= "center">&copy; 2019 Devyani Shrivastava </p> </div>
+          </footer>
+      </div>
+  </div>
+  
   
                 </body>
                 </html>
