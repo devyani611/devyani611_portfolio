@@ -35,9 +35,7 @@
     clear: both;
     overflow: hidden;
 }
- /*#div2{
-    border: 2px solid black;
-}*/
+ 
 #h1 {
     display: block;
     font-size: 2em;
@@ -122,12 +120,12 @@
         border-color:  #ced4da;
         background-color: white;
     } 
-    hr {
-  box-sizing: content-box;
-  height: 2px;
-  overflow: visible;
-  margin-top: 95%
-}
+        hr {
+        box-sizing: content-box;
+        height: 2px;
+        overflow: visible;
+        margin-top: 95%
+        }
             #h6{
                 font-size: 80%;
                 margin-left:0.2%; 
@@ -135,6 +133,17 @@
                 margin-top:0.8%;
                 font-family: Georgia, 'Times New Roman', Times, serif;
                 font-weight:500;
+              }
+
+              a {
+                text-decoration: none; 
+                font-family: Arial, Helvetica, sans-serif;
+                color:#484848; 
+              }
+
+              a:hover, a:focus {
+                color: black;
+                font-weight: bold;
               }
   
 </style>              
@@ -151,72 +160,72 @@
         </nav>
     </div>
     <div id= "container" class= "wrapper">
-        <div id="div2">
+        <div>
             <h1 id="h1">My work</h1>
             <div id="project1">
-                <img src= "2048.jpg" height ="250" width= "170" alt="2048 game" style= "float:left">
+                <img src= "2048.jpg" height ="230" width= "170" alt="2048 game" style= "float:left">
                 <!--div-nested-->
                 <div style= "margin-left: 20%;"> 
-                <h2>2048 game using AI</h1>
-                <p>The 2048 game is a single-player game.In the project, we implemented the Minimax Algorithm, 
+                <h1>2048 game using AI</h1>
+                <p>The 2048 game is a single-player game. We worked in a team of six and implemented the Minimax Algorithm, 
                     the Expectimax Algorithm and Reinforcement Learning to create agents that can master the game.
-                    Following were the parameters used in the project:<br>
-                    Performance Measure:Tile with the maximum value on the board<br>
-                    Environment: 2048 game board of 16 squares in a 4x4 configuration.<br>
-                    Actuators: Virtual keyboard events ‘Up’, ‘Down’, ‘Left’, ‘Right’.<br>
-                    Sensors: Interaction with game logic.<br>
-                    Essentially, the projects involves the implemenation and comparative analysis of the three algorithms.<br>
+                    I created the agent using reinforcement learning.
+                    Essentially, the project involves the implementation and comparative analysis of the three algorithms.<br>
                     Implementation language: Python <br>
-                    Libraries: tkinter, keras, numpy, random
+                    Libraries: tkinter, keras, numpy, random <br>
+                    Implementation details: <a href = "https://github.com/devyani611/Artificial-Intelligence">
+                        https://github.com/devyani611/Artificial-Intelligence</a>
                 </p>
             </div>
             </div>
             <div id="project2">
-                    <img src= "wine.jpg" height ="250" width= "170" alt="2048 game" style= "float:left">
+                    <img src= "wine.jpg" height ="230" width= "170" alt="wine image" style= "float:left">
                     <!--div-nested-->
                     <div style= "margin-left: 20%;"> 
-                    <h2>Wine quality prediction</h1>
+                    <h1>Wine quality prediction</h1>
                     <p>Implemented random forest and decision tree algorithms in machine learning to predict the quality of wine. The goal 
-                            of the project was to determine white wine quality based on its chemical properties. The dataset was downloaded from UCI and it
-                            contains 11 attributes and the 12th column is quality which is regarded as the label 
-                            or target data. Quality is graded from 0 to 10, where 0 is the worst and 10 is the best quality. Based 
-                            on the quality scores we classify wines as Good, Bad and Normal ones. Essentially, the accuracy of random forest 
+                            of the project was to determine white wine quality based on its chemical properties. Quality is graded from 0 to 10, where 0 is the worst and 10 is the best quality. Based 
+                            on the quality scores we classified wines as Good, Bad and Normal ones. Essentially, the accuracy of random forest 
                             algorithm and decision tree algorithm had been compared.<br>
-                        Dataset: <a href= "https://archive.ics.uci.edu/ml/datasets/wine+quality">https://archive.ics.uci.edu/ml/datasets/wine+quality</a>
-                        <br>Implementation language: Python <br>
-                        Libraries: sklearn, numpy, seaborn, matplotlib, graphviz, pandas.
+                        Implementation language: Python <br>
+                        Libraries: sklearn, numpy, seaborn, matplotlib, graphviz, pandas.<br>
+                        Implementation details: <a href = "https://github.com/devyani611/Machine-Learning">
+                            https://github.com/devyani611/Machine-Learning</a>
+
                     </p>
                 </div>
                 </div>
                 <div id="project3">
-                        <img src= "ipl.jpg" height ="250" width= "170" alt="2048 game" style= "float:left">
+                        <img src= "ipl.jpg" height ="230" width= "170" alt="IPL game" style= "float:left">
                         <!--div-nested-->
                         <div style= "margin-left: 20%;"> 
-                        <h2>Database Implementation of IPL(Indian Premiere League)</h1>
+                        <h1>Database Implementation of IPL(Indian Premiere League)</h1>
                         <p>The domain of this database was based on Indian Premier League (IPL). 
                             IPL, is a professional Twenty20 cricket league in India, which is contested during April and May of every year 
                             by 8 teams representing Indian cities and some states.Each team plays each other twice in a 
                             home-and-away round-robin format. It is the most-attended cricket league in the world. The data for a few tables was
-                            downloaded online, while some of the tables was populated by me. <br>
-                            Dataset: <a href= "https://www.kaggle.com/harsha547/indian-premier-league-csv-dataset/version/2">
-                                https://www.kaggle.com/harsha547/indian-premier-league-csv-dataset/version/2</a>
+                            downloaded online, while some of the tables were populated by me. 
                             <br>Database: PostgreSQL<br>
+                            Implementation details: <a href = "https://github.com/devyani611/Introduction-to-DBMS">
+                                https://github.com/devyani611/Introduction-to-DBMS</a>
                             
                         </p>
                     </div>
                     </div>
     <div id="project4">
-        <img src= "sorting.jpg" height ="250" width= "170" alt="2048 game" style= "float:left">
+        <img src= "sorting.jpg" height ="230" width= "170" alt="sorting" style= "float:left">
             <!--div-nested-->
                 <div style= "margin-left: 20%;"> 
-                    <h2>Analysis of QuickSort, RadixSort, TimSort</h1>
-                        <p>Implemented QuickSort with naive pivot selection, random pivot selection and median of medians with group 5 and group 7.
+                    <h1>Analysis of QuickSort, RadixSort, TimSort</h1>
+                        <p>Implemented QuickSort with naive pivot selection, random pivot selection and median of medians with group 5 and group 7,
+                            Radix sort and Tim sort to compare and analyze their performance.
                             To scrutinize the algorithms thoroughly, different input lists are generated as: Unique random integers list,
                             Few unique random integers list(may contain duplicate integers), Nearly sorted (first half sorted, 
                             second half random), Nearly sorted( second half sorted, first half random),Reverse integers list (sorted in decreasing order).
                          <br>Implementation Language: Python<br>
-                         Input sizes: 1000,10000,100000,1000000.<br>
-                         Libraries: random
+                         Libraries: random <br>
+                         Implementation details: <a href = "https://github.com/devyani611/Analysis-and-Design-of-Algorithm">
+                            https://github.com/devyani611/Analysis-and-Design-of-Algorithm</a>
                         </p>
                 </div>
     </div>
